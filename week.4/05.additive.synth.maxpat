@@ -9,8 +9,20 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 203.0, 92.0, 784.0, 406.0 ],
+        "rect": [ 319.0, 87.0, 1000.0, 674.0 ],
         "boxes": [
+            {
+                "box": {
+                    "format": 6,
+                    "id": "obj-7",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 863.6666911840439, 242.68293261528015, 50.0, 22.0 ]
+                }
+            },
             {
                 "box": {
                     "color": [ 0.317647, 0.654902, 0.976471, 1.0 ],
@@ -376,6 +388,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-6", 1 ],
+                    "order": 1,
                     "source": [ "obj-1", 1 ]
                 }
             },
@@ -384,6 +397,13 @@
                     "destination": [ "obj-6", 0 ],
                     "order": 0,
                     "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "order": 0,
+                    "source": [ "obj-1", 1 ]
                 }
             },
             {
@@ -539,14 +559,6 @@
         ],
         "parameters": {
             "obj-24": [ "live.gain~", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
