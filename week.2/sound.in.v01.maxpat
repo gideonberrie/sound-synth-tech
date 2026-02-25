@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 40.0, 87.0, 725.0, 674.0 ],
+        "rect": [ 665.0, 101.0, 725.0, 674.0 ],
         "boxes": [
             {
                 "box": {
@@ -95,13 +95,13 @@
                     },
                     "id": "obj-17",
                     "maxclass": "playlist~",
-                    "mode": 0,
+                    "mode": "basic",
                     "numinlets": 1,
                     "numoutlets": 5,
                     "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 389.25617676973343, 305.7851070165634, 150.0, 92.0 ],
-                    "quality": 0,
+                    "quality": "basic",
                     "saved_attribute_attributes": {
                         "candicane2": {
                             "expression": ""
