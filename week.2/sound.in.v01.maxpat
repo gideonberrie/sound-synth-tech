@@ -9,17 +9,29 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 665.0, 101.0, 725.0, 674.0 ],
+        "rect": [ 34.0, 87.0, 633.0, 674.0 ],
         "boxes": [
             {
                 "box": {
-                    "id": "obj-24",
-                    "maxclass": "newobj",
+                    "id": "obj-11",
+                    "items": "<empty>",
+                    "maxclass": "umenu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 98.99999982118607, 143.54838812351227, 100.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "toggle",
                     "numinlets": 1,
                     "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 178.00000530481339, 278.0000082850456, 83.0, 22.0 ],
-                    "text": "loadmess 128"
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 627.0, 108.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -30,7 +42,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 759.782594203949, 188.04347467422485, 40.0, 22.0 ],
-                    "text": "*~ 0.5"
+                    "text": "*~ 0.2"
                 }
             },
             {
@@ -90,8 +102,18 @@
             },
             {
                 "box": {
+                    "clipheight": 91.0,
                     "data": {
-                        "clips": []
+                        "clips": [
+                            {
+                                "absolutepath": "/Users/gideonberrie/Library/CloudStorage/OneDrive-Personal/Desktop/sound-synth-tech/week.5b/synth-tech-media-master/instrumental.samples/648437__timouse__piano-loop-21.wav",
+                                "filename": "648437__timouse__piano-loop-21.wav",
+                                "filekind": "audiofile",
+                                "id": "u667006036",
+                                "loop": 0,
+                                "content_state": {                                }
+                            }
+                        ]
                     },
                     "id": "obj-17",
                     "maxclass": "playlist~",
@@ -125,62 +147,6 @@
                             "expression": ""
                         }
                     }
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-16",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 389.25617676973343, 167.76858574151993, 24.0, 24.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-15",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "" ],
-                    "patching_rect": [ 389.25617676973343, 132.23139762878418, 41.0, 22.0 ],
-                    "text": "sel 32"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-14",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 4,
-                    "outlettype": [ "int", "int", "int", "int" ],
-                    "patching_rect": [ 388.02063912153244, 102.44627398252487, 50.5, 22.0 ],
-                    "text": "key"
-                }
-            },
-            {
-                "box": {
-                    "format": 6,
-                    "id": "obj-13",
-                    "maxclass": "flonum",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 118.18181163072586, 533.8842679262161, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-10",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 115.70247292518616, 477.68592393398285, 111.0, 22.0 ],
-                    "text": "expr ($i1 - 128)*0.6"
                 }
             },
             {
@@ -248,74 +214,19 @@
                     "patching_rect": [ 105.0, 221.0, 675.0, 22.0 ],
                     "text": "selector~ 5"
                 }
-            },
-            {
-                "box": {
-                    "id": "obj-2",
-                    "items": "<empty>",
-                    "maxclass": "umenu",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 105.0, 142.0, 100.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 105.0, 105.0, 70.0, 22.0 ],
-                    "text": "loadmess 2"
-                }
             }
         ],
         "lines": [
             {
                 "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-1", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-13", 0 ],
-                    "source": [ "obj-10", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-15", 0 ],
-                    "source": [ "obj-14", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-16", 0 ],
-                    "order": 1,
-                    "source": [ "obj-15", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-20", 0 ],
-                    "order": 0,
-                    "source": [ "obj-15", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-17", 0 ],
-                    "source": [ "obj-16", 0 ]
+                    "destination": [ "obj-3", 0 ],
+                    "source": [ "obj-11", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-3", 2 ],
-                    "midpoints": [ 398.75617676973343, 417.0, 84.0, 417.0, 84.0, 207.0, 376.9, 207.0 ],
+                    "midpoints": [ 398.75617676973343, 407.7851070165634, 387.8280883848667, 407.7851070165634, 387.8280883848667, 211.0, 376.9, 211.0 ],
                     "source": [ "obj-17", 0 ]
                 }
             },
@@ -329,12 +240,6 @@
                 "patchline": {
                     "destination": [ "obj-3", 3 ],
                     "source": [ "obj-19", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-2", 0 ]
                 }
             },
             {
@@ -364,12 +269,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-5", 0 ],
-                    "source": [ "obj-24", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-5", 0 ],
                     "order": 0,
                     "source": [ "obj-3", 0 ]
                 }
@@ -389,12 +288,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-10", 0 ],
-                    "source": [ "obj-5", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-7", 0 ],
                     "order": 1,
                     "source": [ "obj-5", 0 ]
@@ -405,6 +298,12 @@
                     "destination": [ "obj-9", 0 ],
                     "order": 0,
                     "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-6", 0 ]
                 }
             }
         ],

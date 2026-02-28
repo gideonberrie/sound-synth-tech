@@ -13,11 +13,31 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 70.0, 193.0, 105.0, 22.0 ],
+                    "text": "random.notes.v01"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 70.0, 80.0, 66.0, 22.0 ],
+                    "text": "midi.in.v01"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-2",
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 70.0, 179.0, 121.0, 22.0 ],
+                    "patching_rect": [ 70.0, 236.0, 121.0, 22.0 ],
                     "text": "sound.out.v01.stereo"
                 }
             },
