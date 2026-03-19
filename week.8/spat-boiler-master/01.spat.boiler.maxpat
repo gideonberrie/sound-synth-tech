@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 686.0, 674.0 ],
+        "rect": [ 352.0, 117.0, 686.0, 674.0 ],
         "boxes": [
             {
                 "box": {
@@ -19,7 +19,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 283.67605781555176, 446.47887909412384, 119.0, 47.0 ],
-                    "presentation_linecount": 3,
                     "text": "Recall spat~ settings by dropping your text file here!"
                 }
             },
@@ -31,7 +30,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 13.253519058227539, 478.87324571609497, 120.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "Save your spat~ settings in a text file:"
                 }
             },
@@ -108,7 +106,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 660.8695526123047, 340.1102350950241, 393.0, 87.0 ],
-                    "presentation_linecount": 6,
                     "text": "We're going to need the following ingredients from spat~ : \n\n<spat5.oper> Perceptual control interface for the spatializer algorithm\n<spat5.spat~> Spatializer algorithm (the core of the process)\n<spat5.osc.view> Display OSC messages that define spatial parameters\n<spat5.virtualspeakers> Simple stereo binaural mixdown"
                 }
             },
@@ -239,7 +236,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 510.43662416934967, 440.84507620334625, 150.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "<= double-click to search for & load a SOFA file"
                 }
             },
@@ -1123,7 +1119,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 789.1304197311401, 631.4145773649216, 219.0, 62.0 ],
-                    "presentation_linecount": 4,
                     "text": ";\rspat.oper.msg /source/*/early/mute $1, /source/*/cluster/mute $1, /source/*/reverb/mute $1"
                 }
             },
@@ -1158,7 +1153,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 789.1304197311401, 466.1971892118454, 220.0, 102.0 ],
-                    "presentation_linecount": 7,
                     "text": ";\rspat.oper.msg /source/number 8, /speaker/number 8, /speakers/aed 0 0 1 45 0 1 90 0 1 135 0 1 -180 0 1 -135 0 1 -90 0 1 -45 0 1, /source/*/early/mute 1, /source/*/cluster/mute 1, /source/*/reverb/mute 1, bang"
                 }
             },
@@ -1667,14 +1661,6 @@
             "obj-37": [ "angular", "angular — speakers", 0 ],
             "obj-39": [ "live.text[20]", "live.text[20]", 0 ],
             "obj-93": [ "live.gain~[4]", "binaural — headphones", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
