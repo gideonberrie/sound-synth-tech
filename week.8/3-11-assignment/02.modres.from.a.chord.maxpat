@@ -18,7 +18,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 59.30232346057892, 480.23254096508026, 91.0, 22.0 ],
-                    "text": "send~ source.2"
+                    "text": "send~ 2.source"
                 }
             },
             {

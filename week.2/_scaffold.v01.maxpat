@@ -13,6 +13,16 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 70.0, 30.0, 81.0, 22.0 ],
+                    "text": "01.spat.boiler"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-4",
                     "maxclass": "newobj",
                     "numinlets": 0,
